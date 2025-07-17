@@ -2,8 +2,9 @@ from flask import Flask, render_template, request, redirect, url_for
 app = Flask(__name__) # Список користувачів для авторизації
 users = {"user1": "password1", "user2": "password2"}
 @app.route('/')
+
 def home():
-    return render_template('home.html')
+return render_template('home.html')
     @app.route('/login', methods=['GET', 'POST'])
 
 def login():
