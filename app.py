@@ -17,4 +17,4 @@ def login():
         return "Невірний логін або пароль"
     return render_template('login.html')
 if __name__ == '__main__':
-app.run(debug=True)
+    app.run(debug=True)
